@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Alejandro Rosas, desarrollador de software y productor de videojuegos en Bogotá, Colombia."
+    />
+    <meta name="theme-color" content="#f5f5f5" />
+    <title>Alejandro Rosas — flowerzing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <canvas class="depth-field" aria-hidden="true"></canvas>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <div class="custom-cursor" aria-hidden="true">
+      <span class="cursor-ring"></span>
+      <span class="cursor-dot"></span>
+    </div>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <header class="site-header">
+      <a class="wordmark" href="#inicio" aria-label="flowerzing, inicio">
+        <span class="wordmark-icon" aria-hidden="true">✳</span>flowerzing<span
+          class="wordmark-period"
+          >.</span
+        >
+      </a>
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="site-nav"
+        aria-label="Abrir menú"
+      >
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#enfoque">Áreas</a>
+        <a href="#proceso">En aprendizaje</a>
+        <a href="#contacto" class="nav-contact">Contacto <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main id="contenido">
+      <section class="hero section-shell" id="inicio" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> ALEJANDRO ROSAS · BOGOTÁ, COLOMBIA</p>
+          <h1 id="hero-title">Hola, soy<br />Alejandro.</h1>
+          <p class="hero-intro">
+            Trabajo en desarrollo de software y producción de videojuegos. También me interesan la
+            gestión de proyectos IT y la ciberseguridad, que estoy aprendiendo.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="#contacto">
+              Escríbeme <span aria-hidden="true">↗</span>
+            </a>
+            <a class="text-link" href="#sobre-mi">Sobre mí <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-location">
+            <span class="location-mark" aria-hidden="true">⌖</span>
+            <span>Bogotá, Colombia</span>
+          </div>
+        </div>
+
+        <div class="hero-art" aria-hidden="true">
+          <canvas class="hero-scene"></canvas>
+          <div class="scene-caption">
+            <span>SOFTWARE</span>
+            <span aria-hidden="true">/</span>
+            <span>VIDEOJUEGOS</span>
+            <span aria-hidden="true">/</span>
+            <span>BOGOTÁ</span>
+          </div>
+        </div>
+
+        <a class="scroll-cue" href="#sobre-mi" aria-label="Desplazarse hacia abajo">
+          <span aria-hidden="true">↓</span>
+        </a>
+      </section>
+
+      <section class="about section-shell" id="sobre-mi" aria-labelledby="about-title">
+        <div class="section-heading">
+          <p class="eyebrow">Sobre mí</p>
+        </div>
+        <div class="about-grid" data-reveal>
+          <h2 id="about-title">Software,<br /><span>juegos y equipo.</span></h2>
+          <div class="about-copy">
+            <p>
+              Soy Alejandro Rosas, desarrollador de software y productor de videojuegos en Bogotá.
+              También tengo experiencia e interés en la gestión de proyectos IT.
+            </p>
+            <p>
+              En este momento estoy aprendiendo ciberseguridad y ampliando mis conocimientos en
+              desarrollo. Estoy abierto a nuevas oportunidades de trabajo.
+            </p>
+            <div class="about-note">
+              <span class="note-mark" aria-hidden="true">↗</span>
+              <span>Algunos repositorios son privados. Si quieres conocer más de mi trabajo, escríbeme.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="focus section-shell" id="enfoque" aria-labelledby="focus-title">
+        <div class="section-heading">
+          <p class="eyebrow">Áreas de interés</p>
+        </div>
+        <h2 class="focus-title" id="focus-title" data-reveal>En qué trabajo.</h2>
+        <div class="focus-grid" data-reveal>
+          <article class="focus-card">
+            <span class="card-kicker">Tecnología</span>
+            <h3>Desarrollo de software</h3>
+            <p>Desarrollo con distintos lenguajes y herramientas, desde la web hasta el backend.</p>
+          </article>
+          <article class="focus-card">
+            <span class="card-kicker">Producción</span>
+            <h3>Producción de videojuegos</h3>
+            <p>Me interesa cómo se coordinan las ideas, el equipo y el desarrollo de un juego.</p>
+          </article>
+          <article class="focus-card">
+            <span class="card-kicker">Organización</span>
+            <h3>Gestión de proyectos IT</h3>
+            <p>Organización y seguimiento para que el trabajo avance con objetivos claros.</p>
+          </article>
+          <article class="focus-card">
+            <span class="card-kicker">En aprendizaje</span>
+            <h3>Ciberseguridad</h3>
+            <p>Un área que estoy estudiando para entender mejor cómo proteger el software.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="toolkit section-shell" aria-labelledby="toolkit-title">
+        <div class="toolkit-copy" data-reveal>
+          <p class="eyebrow">Tecnologías</p>
+          <h2 id="toolkit-title">Herramientas<br /><span>que conozco.</span></h2>
+          <p>Lenguajes, herramientas y tecnologías que forman parte de mi aprendizaje.</p>
+        </div>
+        <div class="toolkit-lists" data-reveal>
+          <div class="toolkit-group">
+            <h3>Lenguajes</h3>
+            <ul class="tag-list">
+              <li>JavaScript</li>
+              <li>Python</li>
+              <li>Java</li>
+              <li>C / C++</li>
+              <li>PHP</li>
+              <li>Lua</li>
+            </ul>
+          </div>
+          <div class="toolkit-group">
+            <h3>Web y herramientas</h3>
+            <ul class="tag-list">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>React</li>
+              <li>Node.js</li>
+              <li>Git</li>
+              <li>GitHub</li>
+              <li>Linux</li>
+              <li>MongoDB</li>
+              <li>VS Code</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="approach section-shell" id="proceso" aria-labelledby="approach-title">
+        <div class="section-heading">
+          <p class="eyebrow">En aprendizaje</p>
+        </div>
+        <div class="approach-intro" data-reveal>
+          <h2 id="approach-title">En qué me estoy<br /><span>enfocando ahora.</span></h2>
+          <p>
+            Estoy estudiando ciberseguridad y fortaleciendo mis conocimientos de desarrollo.
+          </p>
+        </div>
+        <div class="process-line" data-reveal aria-label="Temas de aprendizaje">
+          <article class="process-step">
+            <div class="step-top"><span>EN CURSO</span><span class="step-symbol" aria-hidden="true">↗</span></div>
+            <h3>Ciberseguridad</h3>
+            <p>Fundamentos de seguridad y buenas prácticas en el desarrollo de software.</p>
+          </article>
+          <article class="process-step">
+            <div class="step-top"><span>EN PRÁCTICA</span><span class="step-symbol" aria-hidden="true">↗</span></div>
+            <h3>Desarrollo</h3>
+            <p>Seguir aprendiendo y ganar experiencia con lenguajes y tecnologías de software.</p>
+          </article>
+          <article class="process-step">
+            <div class="step-top"><span>LO QUE BUSCO</span><span class="step-symbol" aria-hidden="true">↗</span></div>
+            <h3>Nuevos retos</h3>
+            <p>Busco oportunidades para aportar, asumir responsabilidades y seguir creciendo.</p>
+          </article>
+        </div>
+        <div class="approach-note" data-reveal>
+          <span class="note-mark" aria-hidden="true">↗</span>
+          <p>Estoy buscando oportunidades para seguir creciendo en tecnología.</p>
+        </div>
+      </section>
+
+      <section class="contact section-shell" id="contacto" aria-labelledby="contact-title">
+        <div class="contact-topline">
+          <p class="eyebrow">Contacto</p>
+        </div>
+        <h2 id="contact-title" data-reveal>Oportunidades<br /><span>y conversación.</span></h2>
+        <div class="contact-bottom" data-reveal>
+          <p>
+            Para oportunidades laborales o para conversar sobre software y videojuegos, puedes escribirme por correo.
+          </p>
+          <a class="button button-light" href="mailto:alejandrorosasrbx@gmail.com">
+            Enviar correo <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+        <div class="contact-links" aria-label="Redes sociales">
+          <a href="https://github.com/flowerzing" target="_blank" rel="noreferrer">
+            GitHub <span aria-hidden="true">↗</span>
+          </a>
+          <a href="https://www.linkedin.com/in/alejandrorosasing/" target="_blank" rel="noreferrer">
+            LinkedIn <span aria-hidden="true">↗</span>
+          </a>
+          <a href="https://discord.com/users/378245133088325645" target="_blank" rel="noreferrer">
+            Discord <span aria-hidden="true">↗</span>
+          </a>
+          <a href="mailto:ing.flowerzz.fct@gmail.com">
+            Email <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="footer-wordmark" href="#inicio">flowerzing<span>.</span></a>
+      <p>Alejandro Rosas · Bogotá, Colombia</p>
+      <a class="back-to-top" href="#inicio">Volver arriba ↑</a>
+      <span class="footer-year">© <span id="year"></span> Alejandro Rosas</span>
+    </footer>
+  </body>
+</html>
